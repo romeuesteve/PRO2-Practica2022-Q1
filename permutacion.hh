@@ -4,7 +4,6 @@
 #include <iostream>
 #include <vector>
 #include "BinTree.hh"
-#include "alfabeto.hh"
 using namespace std;
 
 class Permutacion {
