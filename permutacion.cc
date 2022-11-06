@@ -40,7 +40,7 @@ string Permutacion::leer_arbol(const BinTree<char> t) {
 	return s;
 }
 
-void Permutacion::codificar(string& s, const int& b) {
+void Permutacion::codificar_permutacion(string& s, const int& b) {
 	const int size = s.size();
 	const int n = size/b + bool(size%b);
 
@@ -62,4 +62,45 @@ void Permutacion::codificar(string& s, const int& b) {
 		cout << s << endl;
 	}
 }
+/*
+char Permutacion::codificar_char(Alfabeto alfabeto, const char& a, const char& b) {
+	if (alfabeto.es_especial()) {
+		return (a + b - 2*alfabeto.encontrar_pos_char(0))%alfabeto.size() + alfabeto.encontrar_pos_char(0);
+	}
+	else {
+		return alfabeto.encontrar_char_pos((alfabeto.encontrar_pos_char(a) + alfabeto.encontrar_pos_char(b))%alfabeto.size());
+	}
+}
 
+char Permutacion::descodificar_char(Alfabeto alfabeto, const char& c, const char& b) {
+	if (alfabeto.es_especial()) {
+		char a = c- b;
+		if (a < 0) a += alfabeto.size();
+		return a + alfabeto.encontrar_pos_char(0);
+	}
+	else {
+		char a = alfabeto.encontrar_pos_char(c) - alfabeto.encontrar_pos_char(b);
+		if (a < 0) a += alfabeto.size();
+		return alfabeto.encontrar_char_pos(a);
+	}
+}
+
+void Permutacion::codificar_sustitucion(const Alfabeto& alfabeto, const string& t, const string& c) {
+	int n = t.size();
+	int n_c = c.size();
+	string e = t;
+	for (int i = 0; i < n; ++i) {
+		e[i] = codificar_char(alfabeto, t[i], c[i%n_c]);
+	}
+	cout << e << endl;
+}
+
+void Permutacion::descodificar_sustitucion(const Alfabeto& alfabeto, const string& e, const string& c) {
+	int n = e.size();
+	int n_c = c.size();
+	string t = e;
+	for (int i = 0; i < n; ++i) {
+		t[i] = descodificar_char(alfabeto, e[i], c[i%n_c]);
+	}
+	cout << t << endl;
+}*/
