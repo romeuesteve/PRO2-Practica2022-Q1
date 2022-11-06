@@ -6,4 +6,4 @@ Podeis inspiraros para hacer parte de vuestro código o copiarlo enteramente (au
 
 **Disclaimer 2:** Dependiendo de como escribas las claves para la codificación de sustitución pueden haber ciertos errores en el output, debido a los getline.
 
-**Ejemplo de permutacion con b = 18:** eeqb utjonrd  jaoa
+**Ejemplo de permutacion con b = 18:** eeqb-utjonrd--jaoa
