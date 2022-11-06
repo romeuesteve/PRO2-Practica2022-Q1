@@ -43,7 +43,10 @@ string Permutacion::leer_arbol(const BinTree<char> t) {
 void Permutacion::codificar_permutacion(string& s, const int& b) {
 	const int size = s.size();
 	const int n = size/b + bool(size%b);
-
+	if (size == 0) {
+		cout << endl;
+		return;
+	}
 	if (n <= 1) {
 		const BinTree<char> t = crear_arbol(s);
 		cout << leer_arbol(t) << endl;
