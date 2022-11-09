@@ -1,4 +1,4 @@
-# PRO2-Practica2022-Q2
+# PRO2-Practica2022-Q1
 Código propio para la práctica de PRO2, no hago la asignatura pero lo he hecho como pasatiempo.
 Podeis inspiraros para hacer parte de vuestro código o copiarlo enteramente (aunque alguien más puede que también lo haga y salte el detector de copias ¯\\\_(ツ)_/¯).
 
